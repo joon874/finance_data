@@ -5,7 +5,7 @@ name: Run Scraper - Update stock market data
 
 on:
   schedule:
-    - cron:  '*/1 * * * *'
+    - cron:  '*/05 * * * *'
 
 jobs:
   build:
@@ -25,7 +25,7 @@ jobs:
         pip install -r requirements.txt
     - name: Run Scraper with python
       run: |
-        python "Scraper.py"
+        python "finance_crawling.py"
     - name: Commits
       run: |
         git config --local user.email "lawrence@wiznet.io"
