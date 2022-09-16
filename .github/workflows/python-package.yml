@@ -29,7 +29,7 @@ jobs:
     - name: Commits
       run: |
         git config --local user.email "lawrence@wiznet.io"
-        git config --local user.name "lawrence"
+        git config --local user.name "joon874"
         git add stock.json
         git commit -m "Auto - Update stock market data"
     - name: Push
