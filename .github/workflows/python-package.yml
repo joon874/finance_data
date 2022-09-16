@@ -4,8 +4,7 @@
 name: Run Scraper - Update stock market data
 
 on:
-  schedule:
-    - cron:  '*/05 * * * *'
+  push
 
 jobs:
   build:
